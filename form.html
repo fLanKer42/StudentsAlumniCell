@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="myscripts.js"></script>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            .heading {
+                text-align: center;
+                font-size: 50px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .instruction {
+                text-align: center;
+                width: 70%;
+                margin:auto;
+                font-size: 30px;
+            }
+            .form {
+                width: 30%;
+                height: 40vh;
+                margin: auto;
+                font-size: 20px;
+            }
+            .question {
+                float: left;
+            }
+            .box {
+                float: right;
+            }
+            .box input {
+                width: 200px;
+            }
+            #Review {
+                height: 100px;
+            }
+            .button {
+                margin-top:30px;
+                width: 100%;
+                float: left;
+                text-align:center;
+            }
+            .table {
+                width: 40vw;
+                margin:auto;
+                text-align:center;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 15px;
+                text-align: left;
+            }
+            #error {
+                color: red;
+                display:none;                
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "heading">Video Game Review Site</div>
+        <div class = "instruction">
+            <p>Enter the name of the game and your review of the game</p><br />
+        </div>
+        <div class = "form">
+            <form id="form">
+                <div class = "question">
+                    Name of the game <br /><br />Your review
+                </div>
+                <div class = "box">
+                    <input placeholder="name of the game" id = "Name"><br /><br /><input placeholder="What do you think of the game?" id = "Review">
+                </div>
+                <div class="button">
+                    <button type="button" onclick="myFunction()">Submit</button>
+                    <div id = "error"></div>
+                </div>
+            </form>
+        </div>
+        <div class="table">
+            <table id ="table">
+                <tr>
+                    <th>Name of the game</th>
+                    <th>Review</th>
+                </tr>
+                <tr>
+                    <td>Example1</td>
+                    <td>Great game</td>
+                </tr>
+            </table>
+        </div>
+    </body>
