@@ -3,7 +3,6 @@ function myFunction() {
     name = document.getElementById("Name").value;
     review = document.getElementById("Review").value;
     if (name === ""||review === "") {
-        console.log("hh");
         document.getElementById("error").innerHTML = "Please fill up the form correctly";
         document.getElementById("error").style.display = "block";
     }
